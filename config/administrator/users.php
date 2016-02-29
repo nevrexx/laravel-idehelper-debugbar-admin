@@ -7,8 +7,8 @@
  */
 
 return [
-    'title' => 'users',
-    'single' => 'user',
+    'title' => 'Пользователи',
+    'single' => 'пользователь',
     'model' => 'App\User',
     'columns' => [
         'id',
