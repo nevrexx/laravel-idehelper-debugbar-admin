@@ -39,7 +39,14 @@ class AuthController extends Controller
     {
         $this->middleware('guest', ['except' => 'logout']);
     }
+    // disable new users registrations
+    public function register(){
+        return redirect('login');
+    }
 
+    public function showRegistrationForm(){
+        return redirect('login');
+    }
     /**
      * Get a validator for an incoming registration request.
      *
